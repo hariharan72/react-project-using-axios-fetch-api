@@ -1,0 +1,82 @@
+.MainContainer {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6% 8%;
+}
+
+.MainHeading {
+  font-weight: 600;
+}
+
+.OrderTableWrapper {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.OrderTable {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 2px;
+}
+
+.TableHeading {
+  vertical-align: middle;
+}
+
+.TableHeading > th {
+  text-align: left;
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+.TableContent {
+  background-color: white;
+  border-collapse: separate;
+  width: 100%;
+}
+td {
+  display: table-cell;
+}
+tr {
+  display: table-row;
+  border-bottom: 5px solid #f6f7fb;
+}
+.TableContent > td {
+  text-align: left;
+  padding: 12px 24px;
+  font-size: 14px;
+}
+.BlurText {
+  color: #8c8c8c;
+}
+
+.SearchForm {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.SearchBox {
+  width: calc(100% - 100px);
+  padding: 12px 24px;
+  font-size: 15px;
+  border: 0;
+  border-bottom: 2px solid #8c8c8c;
+  margin: 0 36px 0 0;
+  outline: none;
+}
+
+.ResetBtn {
+  display: inline-block;
+  border-radius: 30px;
+  padding: 14px 36px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: #20b883;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

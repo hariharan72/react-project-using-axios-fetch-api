@@ -1,0 +1,177 @@
+.MainContainer {
+
+  box-sizing: border-box;
+  padding: 6% 8%;
+}
+
+.MainContentWrapper {
+  display: flex;
+}
+
+.BoldText{
+  color: black;
+}
+
+.TableLink {
+  text-decoration: none;
+  width: 100%;
+}
+
+
+.FilterItemsWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+}
+
+.Container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.MainHeading {
+  font-weight: 600;
+}
+.Container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.Checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.Container:hover input ~ .Checkmark {
+  background-color: #ccc;
+}
+
+.Container input:checked ~ .Checkmark {
+  background-color: #2196f3;
+}
+
+.Checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.Container input:checked ~ .Checkmark:after {
+  display: block;
+}
+
+.Container .Checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.OrderTableWrapper {
+  /* width: 100%; */
+  margin-top: 20px;
+}
+
+.OrderTable {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  
+}
+
+/* table {
+  width: 100%;
+} */
+
+.TableHeading {
+  vertical-align: middle;
+  /* width: 100%; */
+  
+}
+
+.TableHeading > th {
+  /* text-align: left; */
+  /* padding: 12px 37px; */
+  /* font-size: 14px; */
+  /* width:140px; */
+  text-align: left;
+  padding: 12px 45px;
+  width:90px
+}
+
+.TableContent {
+  background-color: white;
+  border-collapse: separate;
+  width: 100%;
+}
+td {
+  display: table-cell;
+  text-decoration: none;
+  width: 20%;
+}
+tr {
+  /* width: 100%; */
+  display: table-row;
+  border-bottom: 5px solid #f6f7fb;
+  text-decoration: none;
+}
+th {
+  width: 20%;
+}
+/* tbody {
+  width: 100%; */
+/* } */
+.TableContent > td {
+  text-align: left;
+  padding: 12px 24px;
+  font-size: 14px;
+}
+.BlurText {
+  color: #8c8c8c;
+}
+.TableLink {
+  text-decoration: none;
+  width: 100%;
+}
+
+.Container {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.OrderTable tbody tr {
+  margin-bottom: 10px;
+
+}
+
+.OrderTable tbody td:last-child {
+  text-align: center;
+  padding: 12px 50px;
+  width:85px
+}
+
